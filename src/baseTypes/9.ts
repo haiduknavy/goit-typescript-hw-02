@@ -2,10 +2,7 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
-enum Status {
-  Open = 'open',
-  Close = 'close',
-}
+type Status = 'open' | 'close';
 
 interface Page {
   title: string;
@@ -17,6 +14,5 @@ interface Page {
     updateAt: Date;
   };
 }
-
 
 export {};
